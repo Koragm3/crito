@@ -7,14 +7,14 @@
 header {
      background-color: #F0EFE9;
      display: flex;
-     justify-content: space-between;
      padding: 20px;
+     align-items: center;
 }
 
 
 .container {
      display: flex;
-
+     justify-content: space-between;
      gap: 60px;
      align-items: center;
 
@@ -27,6 +27,7 @@ header {
 
 
 .bars {
+     justify-self: end;
      border: none;
      background-color: transparent;
 
@@ -41,6 +42,7 @@ header {
 
      @media (min-width: 992px) {
           display: block;
+
      }
 }
 
@@ -79,6 +81,9 @@ header {
      justify-content: space-between;
      vertical-align: bottom;
 
+
+
+
      .btn {
 
           color: #191919;
@@ -95,6 +100,8 @@ header {
 
           }
      }
+
+
 
 
 
@@ -122,29 +129,135 @@ header {
 }
 
 
-body {
-     background-color: gray;
+.imgman {
      
 
-     .bold-font {
-          display: flex;
-          font-family: 'DM Sans', sans-serif;
-          font-size: 96px;
-
-
+     @media (max-width: 992px) {
+          display: none;
      }
 
-     .thin-font {
-          font-family: 'Inter', sans-serif;
+}
 
+.bold-font {
+     justify-content: center;
+     font-family: 'DM Sans', sans-serif;
+     font-size: 76px;
 
+     @media (min-width: 240px) {
+          font-size: 34px;
+          justify-content: center;
      }
-
-     .container{
-          display: flex;
-          
+     @media (min-width: 820px) {
+          font-size: 50px;
+          justify-content: center;
      }
-
+     @media (min-width: 1024px) {
+          font-size: 60px;
+          justify-content: center;
+     }
 
      
+}
+
+
+
+.thin-font {
+     font-family: 'Inter', sans-serif;
+     font-size: 24px;
+
+     @media (max-width: 768px) {
+          font-size: 16px;
+          justify-content: center;
+     }
+
+
+
+}
+
+.second-part {
+     display: flex;
+     justify-content: center;
+     background-color: #F0EFE9;
+
+     .under {
+          justify-content: center;
+
+          display: flex;
+
+          .btn2 {
+
+               color: #191919;
+               background-color: transparent;
+               border: 1px solid 191919;
+               text-decoration: none;
+               align-items: center;
+               border-radius: 40px;
+               padding-inline: 34px;
+               margin-top: 8px;
+     
+               &:hover {
+                    background-color: gray;
+     
+               }
+          }
+          .btn1 {
+               justify-content: center;
+               color: #191919;
+               background-color: #f9d783;
+               border: none;
+               text-decoration: none;
+               padding-top: 8px 1px 8px;
+               align-items: center;
+               border-radius: 33px;
+               padding-inline: 20px;
+               margin-top: 8px;
+               margin-right: 4px;
+
+               &:hover {
+                    color:#191919;
+                    background-color: gray;
+
+               }
+          }
+
+
+     }
+
+
+
+
+
+
+
+}
+
+
+
+.container any {
+
+
+
+
+
+     .man-img {
+          margin-right: -50px;
+          align-items: center;
+
+          @media (max-width: 1200px) {
+               display: none;
+          }
+
+
+     }
+}
+
+@media (min-width: 200px) {
+     .container any {
+          .bold-font {
+               font-size: 14px;
+          }
+
+
+     }
+
 }
