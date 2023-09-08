@@ -130,7 +130,7 @@ header {
 
 
 .imgman {
-     
+
 
      @media (max-width: 992px) {
           display: none;
@@ -147,16 +147,18 @@ header {
           font-size: 34px;
           justify-content: center;
      }
+
      @media (min-width: 820px) {
           font-size: 50px;
           justify-content: center;
      }
+
      @media (min-width: 1024px) {
           font-size: 60px;
           justify-content: center;
      }
 
-     
+
 }
 
 
@@ -178,6 +180,7 @@ header {
      display: flex;
      justify-content: center;
      background-color: #F0EFE9;
+     padding: auto;
 
      .under {
           justify-content: center;
@@ -194,12 +197,15 @@ header {
                border-radius: 40px;
                padding-inline: 34px;
                margin-top: 8px;
-     
+               font-family: 'Inter', sans-serif;
+               font-size: 15px;
+
                &:hover {
                     background-color: gray;
-     
+
                }
           }
+
           .btn1 {
                justify-content: center;
                color: #191919;
@@ -212,9 +218,11 @@ header {
                padding-inline: 20px;
                margin-top: 8px;
                margin-right: 4px;
+               font-family: 'Inter', sans-serif;
+               font-size: 16px;
 
                &:hover {
-                    color:#191919;
+                    color: #191919;
                     background-color: gray;
 
                }
@@ -259,5 +267,13 @@ header {
 
 
      }
+
+}
+
+.logos {
+     display: flex;
+     justify-content: center;
+     margin-top: 98px;
+     gap: 150px;
 
 }

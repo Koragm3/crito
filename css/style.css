@@ -145,6 +145,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: #F0EFE9;
+  padding: auto;
 }
 .second-part .under {
   justify-content: center;
@@ -159,6 +160,8 @@ header {
   border-radius: 40px;
   padding-inline: 34px;
   margin-top: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 .second-part .under .btn2:hover {
   background-color: gray;
@@ -175,6 +178,8 @@ header {
   padding-inline: 20px;
   margin-top: 8px;
   margin-right: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 .second-part .under .btn1:hover {
   color: #191919;
@@ -195,4 +200,10 @@ header {
   .container any .bold-font {
     font-size: 14px;
   }
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 98px;
+  gap: 150px;
 }

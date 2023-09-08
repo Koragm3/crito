@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@300;400;500;700;900&display=swap');
+
+
+
+header {
+     background-color: #F0EFE9;
+     display: flex;
+     padding: 20px;
+     align-items: center;
+}
+
+
+.container {
+     display: flex;
+     justify-content: space-between;
+     gap: 60px;
+     align-items: center;
+
+     .social-media {
+          font-size: 24px;
+          margin-right: 14px;
+     }
+}
+
+
+
+.bars {
+     justify-self: end;
+     border: none;
+     background-color: transparent;
+
+     @media (min-width: 992px) {
+          display: none;
+     }
+}
+
+.top-menu {
+     vertical-align: bottom;
+     display: none;
+
+     @media (min-width: 992px) {
+          display: block;
+
+     }
+}
+
+.contact {
+     justify-items: center;
+     display: flex;
+     border-bottom: 1px solid #DAD9D3;
+     padding-bottom: 10px;
+     flex: 1px;
+
+     .info-box {
+          margin-right: 30px;
+          padding-right: 30px;
+          border-right: 1px solid #DAD9D3;
+          font-family: 'Inter', sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+
+
+          i {
+               margin-right: 5px;
+               font-size: 1.2em;
+               font-weight: 1em;
+
+          }
+
+          &.last {
+               border: none;
+
+          }
+     }
+}
+
+.bottom-menu {
+     display: flex;
+     justify-content: space-between;
+     vertical-align: bottom;
+
+
+
+
+     .btn {
+
+          color: #191919;
+          background-color: #f9d783;
+          border: none;
+          text-decoration: none;
+          align-items: center;
+          border-radius: 40px;
+          padding-inline: 34px;
+          margin-top: 8px;
+
+          &:hover {
+               background-color: gray;
+
+          }
+     }
+
+
+
+
+
+}
+
+.menu-option {
+     display: flex;
+     gap: 35px;
+     align-items: center;
+     padding-top: 10px;
+
+     a {
+          justify-content: space-between;
+          text-decoration: none;
+          color: #191919;
+
+          &:hover {
+               color: rgb(97, 97, 97);
+               border-bottom: 2px solid #191919;
+               border-radius: 4px;
+               border-width: 3px;
+          }
+     }
+
+}
