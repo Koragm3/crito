@@ -203,7 +203,11 @@ header {
 }
 .logos {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 98px;
-  gap: 150px;
+}
+@media (max-width: 892px) {
+  .logos {
+    display: none;
+  }
 }
