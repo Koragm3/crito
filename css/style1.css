@@ -99,3 +99,99 @@ header {
   border-radius: 4px;
   border-width: 3px;
 }
+
+.articles {
+  background-color: #F0EFE9;
+}
+.articles .container {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 112px;
+}
+.articles .container .pageoptions a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #191919;
+  text-decoration: none;
+}
+.articles .container .pageoptions a:hover {
+  color: grey;
+}
+.articles .container .pageoptions a:hover:active {
+  color: rgba(33, 25, 25, 0.0705882353);
+}
+.articles .newstext {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  padding-bottom: 105px;
+  margin-top: -82px;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.content .container {
+  font-family: "inter";
+  font-weight: 300;
+  font-size: 16px;
+}
+.content .container .ournews {
+  display: flex;
+  margin-top: 147px;
+  margin-right: auto;
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+}
+.content .grid-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.content .grid-container .bot-nav {
+  justify-content: center;
+  text-align: end;
+}
+.content .grid-container .bot-nav a {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 14px 16px 9px 16px;
+}
+.content .grid-container .bot-nav .next {
+  text-decoration: none;
+  color: #191919;
+}
+.content .grid-container .bot-nav .next:hover {
+  color: #F0EFE9;
+  background-color: #191919;
+}
+@media (max-width: 819px) {
+  .content .grid-container {
+    display: inline-block;
+    justify-content: center;
+  }
+}
+.content .grid-woman {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: start;
+  padding: 47px 22px;
+  font-size: 16px;
+}
+.content .grid-woman .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+}
+.content .grid-woman .responsive {
+  max-width: 100%;
+  height: auto;
+}
