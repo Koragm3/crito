@@ -164,6 +164,7 @@ header {
 .content .grid-container .bot-nav {
   justify-content: center;
   text-align: end;
+  padding-bottom: 118px;
 }
 .content .grid-container .bot-nav a {
   border: 1px solid gray;
@@ -198,4 +199,148 @@ header {
 .content .grid-woman .responsive {
   max-width: 100%;
   height: auto;
+}
+
+.bot-searchbar {
+  background-color: #F0EFE9;
+  padding-top: 118px;
+  padding-bottom: 111px;
+}
+.bot-searchbar .container {
+  display: flex;
+}
+@media (max-width: 571px) {
+  .bot-searchbar .container {
+    display: block;
+  }
+}
+.bot-searchbar .container .left {
+  font-family: "DM Sans";
+  font-weight: bold;
+}
+@media (min-width: 571px) {
+  .bot-searchbar .container .left {
+    display: none;
+    justify-content: center;
+  }
+}
+@media (min-width: 820px) {
+  .bot-searchbar .container .left {
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .bot-searchbar .container .left {
+    font-size: 45px;
+    justify-content: center;
+  }
+}
+.bot-searchbar .container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+@media (max-width: 300px) {
+  .bot-searchbar .container .right {
+    display: block;
+  }
+}
+.bot-searchbar .btn {
+  color: #191919;
+  background-color: #f9d783;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 30px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300px;
+  padding: 16px;
+  padding-inline: 30px;
+}
+.bot-searchbar .btn:hover {
+  background-color: gray;
+}
+.bot-searchbar input {
+  border-radius: 20px;
+  padding: 16px;
+  padding-inline: 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.wrapper-grid {
+  background-color: #0E1021;
+}
+.wrapper-grid .container {
+  justify-content: center;
+  color: #DAD9D3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-family: "DM Sans";
+  font-size: 27px;
+  font-weight: bold;
+  padding-top: 114px;
+  padding-bottom: 90px;
+}
+.wrapper-grid .container .logo {
+  font-family: "Inter";
+  font-size: 16px;
+}
+.wrapper-grid .container .company a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper-grid .container .company a:hover {
+  color: gray;
+}
+.wrapper-grid .container .company a:hover:active {
+  color: #f9d783;
+}
+.wrapper-grid .container .help a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper-grid .container .help a:hover {
+  color: gray;
+}
+.wrapper-grid .container .help a:hover:active {
+  color: #f9d783;
+}
+.wrapper-grid .container .resources a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper-grid .container .resources a:hover {
+  color: gray;
+}
+.wrapper-grid .container .resources a:hover:active {
+  color: #f9d783;
+}
+.wrapper-grid .container .link a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper-grid .container .link a:hover {
+  color: gray;
+}
+.wrapper-grid .container .link a:hover:active {
+  color: #f9d783;
 }

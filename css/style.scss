@@ -197,11 +197,11 @@ header {
      display: flex;
      justify-content: center;
      background-color: #F0EFE9;
-     padding: auto;
+     padding-bottom: 20px;
 
      .under {
-          justify-content: center;
-
+          justify-content: start;
+          margin-top: 30px;
           display: flex;
 
           .btn2 {

@@ -199,6 +199,7 @@ header {
         .bot-nav {
             justify-content: center;
             text-align: end;
+            padding-bottom: 118px;
 
 
             a {
@@ -236,6 +237,7 @@ header {
         font-size: 16px;
 
 
+
         .bold {
             font-family: 'DM Sans';
             font-size: 22px;
@@ -247,6 +249,175 @@ header {
             height: auto;
         }
     }
+}
+
+.bot-searchbar {
+    background-color: #F0EFE9;
+    padding-top: 118px;
+    padding-bottom: 111px;
 
 
+    .container {
+        display: flex;
+
+        @media (max-width: 571px) {
+            display: block;
+
+
+        }
+
+        .left {
+            font-family: 'DM Sans';
+            font-weight: bold;
+
+            @media (min-width: 571px) {
+                display: none;
+                justify-content: center;
+            }
+
+            @media (min-width: 820px) {
+                font-size: 30px;
+                justify-content: center;
+                display: flex;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 45px;
+                justify-content: center;
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            margin-right: 20px;
+
+            @media (max-width: 300px) {
+                display: block;
+
+            }
+        }
+    }
+
+    .btn {
+
+        color: #191919;
+        background-color: #f9d783;
+        border: none;
+        text-decoration: none;
+        align-items: center;
+        border-radius: 30px;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 300px;
+
+        padding: 16px;
+        padding-inline: 30px;
+
+        &:hover {
+            background-color: gray;
+        }
+    }
+
+    input {
+        border-radius: 20px;
+        padding: 16px;
+        padding-inline: 30px;
+        border-radius: 30px;
+        border: none;
+    }
+}
+
+.wrapper-grid {
+    background-color: #0E1021;
+
+    .container {
+        justify-content: center;
+        color: #DAD9D3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'DM Sans';
+        font-size: 27px;
+        font-weight: bold;
+        padding-top: 114px;
+        padding-bottom: 90px;
+
+        .logo {
+            font-family: 'Inter';
+            font-size: 16px;
+
+        }
+
+        .company {
+            a {
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #F0EFE9;
+
+                &:hover {
+                    color: gray;
+
+                    &:active {
+                        color: #f9d783;
+                    }
+                }
+            }
+        }
+
+        .help {
+            a {
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #F0EFE9;
+                &:hover {
+                    color: gray;
+
+                    &:active {
+                        color: #f9d783;
+                    }
+                }
+            }
+        }
+
+        .resources {
+            a {
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #F0EFE9;
+                &:hover {
+                    color: gray;
+
+                    &:active {
+                        color: #f9d783;
+                    }
+                }
+            }
+        }
+
+        .link {
+            a {
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #F0EFE9;
+                &:hover {
+                    color: gray;
+
+                    &:active {
+                        color: #f9d783;
+                    }
+                }
+            }
+        }
+    }
 }
