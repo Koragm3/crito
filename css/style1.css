@@ -13,7 +13,16 @@ header {
   align-items: center;
 }
 .container .social-media {
-  font-size: 24px;
+  font-size: 22px;
+}
+.container .social-media a {
+  color: #191919;
+}
+.container .social-media a:hover {
+  color: gray;
+}
+.container .social-media a:hover:active {
+  color: #f9d783;
 }
 @media (max-width: 992px) {
   .container {
@@ -276,6 +285,7 @@ header {
 
 .wrapper-grid {
   background-color: #0E1021;
+  border-bottom: 1px gray;
 }
 .wrapper-grid .container {
   justify-content: center;
@@ -286,7 +296,7 @@ header {
   font-size: 27px;
   font-weight: bold;
   padding-top: 114px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
 }
 .wrapper-grid .container .logo {
   font-family: "Inter";
@@ -342,5 +352,28 @@ header {
   color: gray;
 }
 .wrapper-grid .container .link a:hover:active {
+  color: #f9d783;
+}
+
+.copy {
+  background-color: #0E1021;
+  color: #F0EFE9;
+  border-top: 2px solid #707070;
+  padding-top: 34px;
+  padding-bottom: 24px;
+}
+.copy .container {
+  display: flex;
+  justify-content: space-between;
+}
+.copy .container .link-part a {
+  color: #F0EFE9;
+  margin-left: 26px;
+  font-size: large;
+}
+.copy .container .link-part a:hover {
+  color: gray;
+}
+.copy .container .link-part a:hover:active {
   color: #f9d783;
 }
