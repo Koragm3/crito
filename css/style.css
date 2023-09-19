@@ -15,6 +15,15 @@ header {
 .container .social-media {
   font-size: 24px;
 }
+.container .social-media a {
+  color: #191919;
+}
+.container .social-media a:hover {
+  color: gray;
+}
+.container .social-media a:hover:active {
+  color: #f9d783;
+}
 @media (max-width: 992px) {
   .container {
     display: flex;
@@ -222,13 +231,287 @@ header {
     font-size: 14px;
   }
 }
-.logos {
-  display: flex;
-  justify-content: space-around;
+.logos .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 98px;
 }
-@media (max-width: 892px) {
-  .logos {
+@media (max-width: 992px) {
+  .logos .container {
     display: none;
   }
+}
+
+.features {
+  padding-top: 106px;
+  padding-bottom: 120px;
+}
+@media (max-width: 821px) {
+  .features {
+    display: none;
+  }
+}
+.features .container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "our-accounting business-ad startup" "our-accounting financial risk";
+}
+.features .container .our-accounting {
+  grid-area: our-accounting;
+}
+.features .container .our-accounting p {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.features .container .our-accounting .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+.features .container .our-accounting .btn {
+  justify-content: center;
+  color: #191919;
+  background-color: #f9d783;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  align-items: center;
+  border-radius: 33px;
+  padding-inline: 120px;
+  margin-top: 8px;
+  margin-right: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+.features .container .our-accounting .btn:hover {
+  color: #191919;
+  background-color: gray;
+}
+.features .container .business-ad {
+  grid-area: business-ad;
+}
+.features .container .business-ad p {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+.features .container .business-ad .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+}
+.features .container .startup {
+  grid-area: startup;
+}
+.features .container .startup p {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+.features .container .startup .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+}
+.features .container .financial {
+  grid-area: financial;
+}
+.features .container .financial p {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+.features .container .financial .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+}
+.features .container .risk {
+  grid-area: risk;
+}
+.features .container .risk p {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+.features .container .risk .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+}
+
+.samantha {
+  padding-bottom: 120px;
+}
+.samantha .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.samantha .container .container {
+  justify-content: start;
+}
+.samantha .container .container .womanimg {
+  position: relative;
+}
+.samantha .container .container .border {
+  background-color: #BEEBFF;
+  border: 1px solid black;
+}
+.samantha .container .container .container {
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  width: 368px;
+  height: 180px;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: -60px;
+}
+.samantha .container .container .container .founder {
+  color: #F94D1C;
+}
+.samantha .container .container .container .lorem {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+.samantha .container p {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.samantha .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+.samantha .container .lorem {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 300;
+}
+.samantha .container .btn {
+  font-family: "Inter";
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #191919;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 40px;
+  padding-inline: 34px;
+  margin-top: 16px;
+}
+.samantha .container .btn:hover {
+  background-color: gray;
+}
+.samantha .container .intro-button {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.samantha .container .intro-button .intro {
+  margin-top: 15px;
+}
+
+.our-service {
+  background-color: #F0EFE9;
+  padding-top: 128px;
+  padding-bottom: 120px;
+}
+.our-service .container {
+  display: block;
+}
+.our-service .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+.our-service .container p {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+}
+.our-service .wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  justify-content: center;
+}
+.our-service .wrapper-grid .container {
+  background-color: #FFFFFF;
+  justify-content: center;
+  color: #191919;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+.our-service .wrapper-grid .container:hover {
+  background-color: #F9D783;
+}
+.our-service .wrapper-grid .container .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+  padding-bottom: 24px;
+  padding-top: 25px;
+}
+.our-service .wrapper-grid .container hr {
+  width: 39px;
+  border: 1px solid black;
+}
+.our-service .wrapper-grid .container .btn {
+  color: #FFFFFF;
+  background-color: #191919;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+.our-service .wrapper-grid .container .btn:hover {
+  color: #191919;
+  background-color: #FFFFFF;
+}
+
+.browse .container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.browse .container button {
+  background-color: transparent;
+  color: #191919;
+  padding: 13px;
+  align-items: center;
+  border-radius: 40px;
+  padding-inline: 40px;
+  margin-top: 8px;
+}
+.browse .container button:hover {
+  background-color: gray;
+}
+
+.why-us {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
