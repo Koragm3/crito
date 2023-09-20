@@ -514,4 +514,173 @@ header {
 .why-us {
   display: grid;
   grid-template-columns: 1fr auto;
+  padding-bottom: 120px;
+}
+.why-us .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 66px;
+}
+.why-us .container .container .container {
+  display: grid;
+  gap: 110px;
+  margin-top: -40px;
+}
+.why-us .container .text {
+  margin-right: 400px;
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: -30px;
+}
+.why-us .container .text .thin {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300;
+}
+.why-us .container p {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.why-us .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+
+.project .container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 104px;
+}
+.project .container p {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 200px;
+}
+.project .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+.project .grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+.project .grid-container p {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e7e7e7;
+}
+.project .grid-container a {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  float: right;
+}
+.project .grid-container a:hover {
+  font-weight: 600;
+}
+.project .grid-container a:hover:active {
+  color: #F9D783;
+}
+.project .grid-container .project-pic {
+  margin-bottom: 60px;
+}
+.project .all-recent .container .all-btn {
+  color: #F0EFE9;
+  background-color: #191919;
+  border-radius: 40px;
+  padding: 10px;
+  padding-inline: 40px;
+}
+.project .all-recent .container .all-btn:hover {
+  background-color: gray;
+}
+
+.our-team {
+  background-color: #edcf86;
+}
+.our-team .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+.our-team .container .thin {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.our-team .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+.our-team .container .all-btn {
+  color: #191919;
+  background-color: transparent;
+  border-radius: 40px;
+  padding: 10px;
+  padding-inline: 40px;
+}
+.our-team .container .all-btn:hover {
+  color: #e7e7e7;
+  background-color: black;
+}
+.our-team .team-pic .container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  margin-top: -120px;
+}
+.our-team .team-pic .container .ourteam1 {
+  display: grid;
+}
+.our-team .team-pic .container .ourteam1 .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.our-team .team-pic .container .ourteam1 .thin {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+.our-team .team-pic .links .container {
+  display: flex;
+  justify-content: center;
+  padding-left: 90px;
+}
+.our-team .team-pic .links .container a {
+  border: none;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: rgba(142, 142, 142, 0.5);
+  margin-left: -50px;
+}
+.our-team .team-pic .links .container a:hover {
+  background-color: #191919;
+}
+
+.our-client .container {
+  background-color: #FFFFFF;
 }
