@@ -146,13 +146,14 @@ header {
         padding-top: 112px;
 
         .pageoptions {
-
+            
             a {
                 font-family: 'Inter', sans-serif;
                 font-size: 16px;
                 font-weight: 300;
                 color: #191919;
                 text-decoration: none;
+                margin-left: 10px;
 
                 &:hover {
                     color: grey;

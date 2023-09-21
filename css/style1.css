@@ -129,6 +129,7 @@ header {
   font-weight: 300;
   color: #191919;
   text-decoration: none;
+  margin-left: 10px;
 }
 .articles .container .pageoptions a:hover {
   color: grey;
