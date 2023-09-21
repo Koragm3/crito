@@ -512,7 +512,7 @@ header {
 }
 
 .why-us {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr auto;
   padding-bottom: 120px;
 }
@@ -521,6 +521,9 @@ header {
   justify-content: start;
   align-items: center;
   padding-top: 66px;
+}
+.why-us .container .why-us-pic {
+  margin-left: -200px;
 }
 .why-us .container .container .container {
   display: grid;
@@ -562,7 +565,6 @@ header {
   font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
-  margin-left: 200px;
 }
 .project .container .bold {
   font-family: "DM Sans";
@@ -615,6 +617,7 @@ header {
 
 .our-team {
   background-color: #edcf86;
+  padding-bottom: 120px;
 }
 .our-team .container {
   display: flex;
@@ -675,12 +678,284 @@ header {
   border-radius: 10px;
   padding: 9px;
   background-color: rgba(142, 142, 142, 0.5);
-  margin-left: -50px;
+  margin-left: -40px;
 }
 .our-team .team-pic .links .container a:hover {
   background-color: #191919;
 }
 
+.our-client {
+  padding-top: 70px;
+  justify-content: center;
+}
 .our-client .container {
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFF;
+}
+.our-client .container .reviews-btn {
+  color: #F0EFE9;
+  background-color: #191919;
+  border-radius: 40px;
+  padding: 10px;
+}
+.our-client .container .reviews-btn:hover {
+  background-color: gray;
+}
+.our-client .container .rating {
+  display: grid;
+}
+.our-client .container .rating .rate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.our-client .container .rating .rate .stars {
+  padding-bottom: 20px;
+}
+.our-client .container .rating .rate .bold {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+}
+.our-client .container .rating .rate .thin {
+  color: #191919;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.our-client .container .rating .rate .rater {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+.our-client .container .rating .rate .rater img {
+  padding-right: 20px;
+}
+.our-client .container .rating .rate .rater .red {
+  color: #F94D1C;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.article-news {
+  padding-top: 120px;
+}
+.article-news .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-news .container .thin {
+  color: #6A6C71;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.article-news .container img {
+  padding-bottom: 20px;
+}
+.article-news .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+}
+.article-news .container .bold2 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+}
+.article-news .container .all-btn {
+  color: #191919;
+  background-color: transparent;
+  border-radius: 40px;
+  padding: 10px;
+  padding-inline: 40px;
+}
+.article-news .container .all-btn:hover {
+  color: #e7e7e7;
+  background-color: black;
+}
+.article-news .links .container {
+  display: flex;
+  justify-content: center;
+  padding-left: 90px;
+}
+.article-news .links .container a {
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: rgba(113, 113, 113, 0.399);
+  margin-left: -40px;
+}
+.article-news .links .container a:hover {
+  background-color: #191919;
+}
+
+.bot-searchbar {
+  background-color: #F0EFE9;
+  padding-top: 118px;
+}
+.bot-searchbar .container {
+  display: flex;
+}
+@media (max-width: 571px) {
+  .bot-searchbar .container {
+    display: block;
+  }
+}
+.bot-searchbar .container .left {
+  font-family: "DM Sans";
+  font-weight: bold;
+}
+@media (min-width: 571px) {
+  .bot-searchbar .container .left {
+    display: none;
+    justify-content: center;
+  }
+}
+@media (min-width: 820px) {
+  .bot-searchbar .container .left {
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .bot-searchbar .container .left {
+    font-size: 45px;
+    justify-content: center;
+  }
+}
+.bot-searchbar .container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+@media (max-width: 300px) {
+  .bot-searchbar .container .right {
+    display: block;
+  }
+}
+.bot-searchbar .btn {
+  color: #191919;
+  background-color: #f9d783;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 30px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300px;
+  padding: 16px;
+  padding-inline: 30px;
+}
+.bot-searchbar .btn:hover {
+  background-color: gray;
+}
+.bot-searchbar input {
+  border-radius: 20px;
+  padding: 16px;
+  padding-inline: 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.wrapper {
+  background-color: #0E1021;
+  border-bottom: 1px gray;
+}
+.wrapper .container {
+  justify-content: center;
+  color: #DAD9D3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-family: "DM Sans";
+  font-size: 27px;
+  font-weight: bold;
+  padding-top: 114px;
+}
+.wrapper .container .logo {
+  font-family: "Inter";
+  font-size: 16px;
+}
+.wrapper .container .company a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper .container .company a:hover {
+  color: gray;
+}
+.wrapper .container .company a:hover:active {
+  color: #f9d783;
+}
+.wrapper .container .help a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper .container .help a:hover {
+  color: gray;
+}
+.wrapper .container .help a:hover:active {
+  color: #f9d783;
+}
+.wrapper .container .resources a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper .container .resources a:hover {
+  color: gray;
+}
+.wrapper .container .resources a:hover:active {
+  color: #f9d783;
+}
+.wrapper .container .link a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #F0EFE9;
+}
+.wrapper .container .link a:hover {
+  color: gray;
+}
+.wrapper .container .link a:hover:active {
+  color: #f9d783;
+}
+
+.copy {
+  background-color: #0E1021;
+  color: #F0EFE9;
+  border-top: 2px solid #707070;
+  padding-top: 34px;
+}
+.copy .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.copy .container .link-part a {
+  color: #F0EFE9;
+  margin-left: 26px;
+  font-size: large;
+}
+.copy .container .link-part a:hover {
+  color: gray;
+}
+.copy .container .link-part a:hover:active {
+  color: #f9d783;
 }
