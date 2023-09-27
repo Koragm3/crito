@@ -277,10 +277,10 @@ header {
   background-color: gray;
 }
 .bot-searchbar input {
-  border-radius: 20px;
   padding: 16px;
   padding-inline: 30px;
   border-radius: 30px;
+  outline: none;
   border: none;
 }
 

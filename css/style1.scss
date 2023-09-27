@@ -334,11 +334,11 @@ header {
         }
     }
 
-    input {
-        border-radius: 20px;
+    input {        
         padding: 16px;
         padding-inline: 30px;
         border-radius: 30px;
+        outline: none;
         border: none;
     }
 }

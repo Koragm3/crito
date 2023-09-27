@@ -175,6 +175,15 @@ header {
   justify-content: center;
   background-color: #F0EFE9;
   padding-bottom: 20px;
+  z-index: -1;
+  position: relative;
+}
+.second-part .lines1 img {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 50%;
+  z-index: 0;
 }
 .second-part .under {
   justify-content: start;
@@ -192,6 +201,7 @@ header {
   margin-top: 8px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  z-index: 2;
 }
 .second-part .under .btn2:hover {
   background-color: gray;
@@ -210,6 +220,7 @@ header {
   margin-right: 4px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  z-index: 2;
 }
 .second-part .under .btn1:hover {
   color: #191919;
@@ -357,13 +368,18 @@ header {
 }
 .samantha .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 .samantha .container .container {
   justify-content: start;
 }
 .samantha .container .container .womanimg {
-  position: relative;
+  display: none;
+}
+@media (min-width: 992px) {
+  .samantha .container .container .womanimg {
+    display: block;
+  }
 }
 .samantha .container .container .border {
   background-color: #BEEBFF;
@@ -373,12 +389,17 @@ header {
   font-family: "DM Sans";
   font-size: 20px;
   font-weight: bold;
-  display: block;
   width: 368px;
   height: 180px;
   position: absolute;
   margin-top: 350px;
   margin-left: -60px;
+  display: none;
+}
+@media (min-width: 992px) {
+  .samantha .container .container .container {
+    display: block;
+  }
 }
 .samantha .container .container .container .founder {
   color: #F94D1C;
@@ -424,16 +445,29 @@ header {
 .samantha .container .intro-button {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
-.samantha .container .intro-button .intro {
-  margin-top: 15px;
+.samantha .container .intro-button a {
+  color: #191919;
+  margin-top: 18px;
+  text-decoration: none;
+}
+.samantha .container .intro-button a:hover {
+  position: relative;
+  color: #707070;
 }
 
 .our-service {
   background-color: #F0EFE9;
   padding-top: 128px;
   padding-bottom: 120px;
+  position: relative;
+}
+.our-service .lines2 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
 }
 .our-service .container {
   display: block;
@@ -455,6 +489,16 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr auto;
   justify-content: center;
 }
+@media (max-width: 992px) {
+  .our-service .wrapper-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 575px) {
+  .our-service .wrapper-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .our-service .wrapper-grid .container {
   background-color: #FFFFFF;
   justify-content: center;
@@ -463,9 +507,12 @@ header {
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 50px;
+  width: 100%;
 }
 .our-service .wrapper-grid .container:hover {
   background-color: #F9D783;
+  transform: scale(1.03);
+  transition: transform 0.5s;
 }
 .our-service .wrapper-grid .container .bold {
   font-family: "DM Sans";
@@ -512,23 +559,35 @@ header {
 }
 
 .why-us {
-  display: flex;
-  grid-template-columns: 1fr auto;
   padding-bottom: 120px;
 }
 .why-us .container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding-top: 66px;
 }
 .why-us .container .why-us-pic {
   margin-left: -200px;
+  display: none;
+}
+.why-us .container .why-us-pic img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .why-us .container .why-us-pic {
+    display: block;
+  }
 }
 .why-us .container .container .container {
-  display: grid;
+  display: none;
   gap: 110px;
   margin-top: -40px;
+}
+@media (min-width: 576px) {
+  .why-us .container .container .container {
+    display: grid;
+  }
 }
 .why-us .container .text {
   margin-right: 400px;
@@ -587,6 +646,11 @@ header {
   padding-bottom: 20px;
   border-bottom: 2px solid #e7e7e7;
 }
+@media (max-width: 992px) {
+  .project .grid-container p {
+    font-size: 16px;
+  }
+}
 .project .grid-container a {
   color: #191919;
   font-family: "Inter";
@@ -604,6 +668,16 @@ header {
 .project .grid-container .project-pic {
   margin-bottom: 60px;
 }
+.project .grid-container .project-pic body {
+  padding: 1em;
+}
+.project .grid-container .project-pic img {
+  transition: transform 0.6s;
+  width: 100%;
+}
+.project .grid-container .project-pic img:hover {
+  transform: scale(1.03);
+}
 .project .all-recent .container .all-btn {
   color: #F0EFE9;
   background-color: #191919;
@@ -618,6 +692,7 @@ header {
 .our-team {
   background-color: #edcf86;
   padding-bottom: 120px;
+  width: 100%;
 }
 .our-team .container {
   display: flex;
@@ -653,8 +728,17 @@ header {
   justify-content: center;
   margin-top: -120px;
 }
-.our-team .team-pic .container .ourteam1 {
-  display: grid;
+@media (max-width: 992px) {
+  .our-team .team-pic .container {
+    grid-template-columns: auto auto;
+  }
+}
+.our-team .team-pic .container .ourteam1 img {
+  width: 100%;
+}
+.our-team .team-pic .container .ourteam1 img:hover {
+  transform: scale(1.04);
+  transition: transform 0.7s;
 }
 .our-team .team-pic .container .ourteam1 .bold {
   font-family: "DM Sans";
@@ -708,6 +792,12 @@ header {
 .our-client .container .rating .rate {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .our-client .container .rating .rate {
+    grid-template-columns: auto auto;
+  }
 }
 .our-client .container .rating .rate .stars {
   padding-bottom: 20px;
@@ -722,6 +812,7 @@ header {
   font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
+  position: relative;
 }
 .our-client .container .rating .rate .rater {
   display: flex;
@@ -746,6 +837,18 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .article-news .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 700px) {
+  .article-news .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
 .article-news .container .thin {
   color: #6A6C71;
   font-family: "Inter";
@@ -754,6 +857,11 @@ header {
 }
 .article-news .container img {
   padding-bottom: 20px;
+  width: 100%;
+}
+.article-news .container img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 .article-news .container .bold {
   font-family: "DM Sans";
@@ -797,6 +905,15 @@ header {
 .bot-searchbar {
   background-color: #F0EFE9;
   padding-top: 118px;
+  position: relative;
+  z-index: 0;
+}
+.bot-searchbar .lines3 img {
+  position: absolute;
+  right: 0px;
+  bottom: 60px;
+  width: 8%;
+  z-index: 1;
 }
 .bot-searchbar .container {
   display: flex;
@@ -863,12 +980,26 @@ header {
   padding: 16px;
   padding-inline: 30px;
   border-radius: 30px;
+  outline: none;
   border: none;
 }
 
 .wrapper {
   background-color: #0E1021;
   border-bottom: 1px gray;
+  display: none;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .wrapper {
+    display: block;
+  }
+}
+.wrapper .lines4 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
 }
 .wrapper .container {
   justify-content: center;
@@ -883,6 +1014,10 @@ header {
 .wrapper .container .logo {
   font-family: "Inter";
   font-size: 16px;
+  width: 100%;
+}
+.wrapper .container .company {
+  width: 100%;
 }
 .wrapper .container .company a {
   font-family: "Inter";
@@ -897,6 +1032,9 @@ header {
 .wrapper .container .company a:hover:active {
   color: #f9d783;
 }
+.wrapper .container .help {
+  width: 100%;
+}
 .wrapper .container .help a {
   font-family: "Inter";
   font-size: 16px;
@@ -910,6 +1048,9 @@ header {
 .wrapper .container .help a:hover:active {
   color: #f9d783;
 }
+.wrapper .container .resources {
+  width: 100%;
+}
 .wrapper .container .resources a {
   font-family: "Inter";
   font-size: 16px;
@@ -922,6 +1063,9 @@ header {
 }
 .wrapper .container .resources a:hover:active {
   color: #f9d783;
+}
+.wrapper .container .link {
+  width: 100%;
 }
 .wrapper .container .link a {
   font-family: "Inter";
@@ -941,7 +1085,7 @@ header {
   background-color: #0E1021;
   color: #F0EFE9;
   border-top: 2px solid #707070;
-  padding-top: 34px;
+  padding-top: 10px;
 }
 .copy .container {
   display: flex;
