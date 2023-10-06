@@ -212,7 +212,7 @@ header {
      justify-content: center;
      background-color: #F0EFE9;
      padding-bottom: 20px;
-     z-index: -1;
+     z-index: 0;
      position: relative;
 
      .lines1 {
@@ -245,7 +245,7 @@ header {
                margin-top: 8px;
                font-family: 'Inter', sans-serif;
                font-size: 15px;
-               z-index: 2;
+               z-index: 1;
 
                &:hover {
                     background-color: gray;
@@ -267,7 +267,7 @@ header {
                margin-right: 4px;
                font-family: 'Inter', sans-serif;
                font-size: 16px;
-               z-index: 2;
+               z-index: 1;
 
                &:hover {
                     color: #191919;
